@@ -1,7 +1,9 @@
 var numbers = [];
+sum = 0;
 for (var i = 0; i < 5; i++) {
-  var userNum = parseFloat(prompt("Enter a number ${i + 1}:"));
-  var num = parseFloat(userNum);
-  userNum.push(numbers);
+  var userNum = +prompt("Enter a number");
+  numbers.push(userNum);
+  sum += userNum[i];
+  console.log(numbers);
+  console.log(sum);
 }
-console.log(numbers);
